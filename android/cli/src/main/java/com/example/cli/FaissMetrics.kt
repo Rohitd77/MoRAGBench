@@ -6,6 +6,8 @@ import java.io.File
 import com.example.faiss.IvfStats
 import com.example.faiss.HnswStats
 import com.example.faiss.FlatStats
+import com.example.faiss.IvfPqStats
+import com.example.faiss.BinaryStats
 
 @Serializable
 class FaissMetrics {
@@ -56,6 +58,8 @@ class FaissMetrics {
     var ivfStats: IvfStats? = null
     var hnswStats: HnswStats? = null
     var flatStats: FlatStats? = null
+    var ivfPqStats: IvfPqStats? = null
+    var binaryStats: BinaryStats? = null
 
     fun calcAvg() {
         chunkingTimeNs.calcAvg()
