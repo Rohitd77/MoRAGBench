@@ -140,7 +140,7 @@ class ANNBenchmark(private val context: Context) {
 
         // Update progress: Change phase
         progress.setPhase(ProgressPhase.EVALUATING)
-
+        faissIndex.resetStats()
         // ****** Benchmark Task ******
         benchmarkTask(
             store = store,
